@@ -6,10 +6,60 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Job.destroy_all
+Honor.destroy_all
+Skill.destroy_all
+Interest.destroy_all
+Link.destroy_all
+# Memory.destroy_all
+# Love.destroy_all
+# Life.destroy_all
+
 job1 = Job.create!(
-    company: "Google", title:"CEO", 
+    company: "Google", title: "CEO", 
     summary: "I sold the world into advertising slavery", 
-    start_month: "March", start_year: 2002, 
-    end_month: "September", end_year:2015, 
-    responsibilities:[""], 
-    skills_used:[])
+    start_month: "Mar", start_year: 2002, 
+    end_month: "Sept", end_year: 2005, 
+    responsibilities:["Make shareholders money", "siphon off said money for myself", "destroy other industries"], 
+    skills_used:["Sociopathy", "Severe undiagnosed trauma", "Acting"])
+
+job2 = Job.create(
+    company: "Tesla", title: "Janitor", 
+    summary: "Too much coke, did this in a halfway house", 
+    start_month: "Oct", start_year: 2007, 
+    end_month: "Feb", end_year: 2008, 
+    responsibilities:["Clean Elon Musk's Musk", "Detail Elon's Tesla", "Try to stay sober"], 
+    skills_used:["Willpower", "Manual labor", "Positive self-outlook"])
+
+job3 = Job.create(
+    company: "None", title: "Janitor", 
+    summary: "Too much coke, did this in a halfway house", 
+    start_month: "Oct", start_year: 2007, 
+    end_month: "Feb", end_year: 2008, 
+    responsibilities:["Clean Elon Musk's Musk", "Detail Elon's Tesla", "Try to stay sober"], 
+    skills_used:["Willpower", "Manual labor", "Positive self-outlook"])
+
+honor1 = Honor.create!(
+    name: "MVP", summary: "I made like a lot of money",
+    month: "Dec", year: "2003"
+)
+
+honor2 = Honor.create(
+    name: "MVP", summary: "I made like a lot of money",
+    month: "Dec", year: "2003"
+)
+
+honor3 = Honor.create(
+    name: "MVP", summary: "I made like a lot of money",
+    month: "Dec", year: "2003"
+)
+
+interest1 = Interest.create!(
+    name: "Machiavelli", summary: "This guy really knew how to screw people over"
+)
+interest2 = Interest.create!(
+    name: "Acoustic guitar", summary: "I can play Wonderwall"
+)
+interest1 = Interest.create!(
+    name: "Reddit", summary: "What a bunch of degenerates"
+)

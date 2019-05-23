@@ -32,12 +32,11 @@ job2 = Job.create(
     skills_used:["Willpower", "Manual labor", "Positive self-outlook"])
 
 job3 = Job.create(
-    company: "None", title: "Janitor", 
-    summary: "Too much coke, did this in a halfway house", 
-    start_month: "Oct", start_year: 2007, 
-    end_month: "Feb", end_year: 2008, 
-    responsibilities:["Clean Elon Musk's Musk", "Detail Elon's Tesla", "Try to stay sober"], 
-    skills_used:["Willpower", "Manual labor", "Positive self-outlook"])
+    company: "None", title: "None", 
+    summary: "Tesla threw me out after an incident", 
+    start_month: "Feb", start_year: 2008, 
+    responsibilities:["Panhandling", "Busking", "Methadone"], 
+    skills_used:["Urgent care", "Bargaining with police", "Neutral self-outlook"])
 
 honor1 = Honor.create!(
     name: "MVP", summary: "I made like a lot of money",

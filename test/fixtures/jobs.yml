@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: MyString
+  title: MyString
+  summary: MyString
+  start_month: MyString
+  start_year: 1
+  end_month: MyString
+  end_year: 1
+
+two:
+  company: MyString
+  title: MyString
+  summary: MyString
+  start_month: MyString
+  start_year: 1
+  end_month: MyString
+  end_year: 1

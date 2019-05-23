@@ -63,3 +63,25 @@ interest2 = Interest.create!(
 interest1 = Interest.create!(
     name: "Reddit", summary: "What a bunch of degenerates"
 )
+
+link1 = Link.create!(
+    title: "Githerb", url: "https://www.github.com",
+    summary: "It's a site what u want from me"
+)
+
+link2 = Link.create(
+    title: "The Internet", url: "https://www.google.com",
+    summary: "Advertising hell"
+)
+
+link3 = Link.create(
+    title: "Ableton", url: "https://www.ableton.com/en/",
+    summary: "A website from a company from a time in a place where the sea never ends into an infinite expanse of merpeople and crystal gazing spheres of liquid thought"
+)
+
+skill1 = Skill.create!(name: "Ruby")
+skill2 = Skill.create(name: "Rails")
+skill3 = Skill.create(name: "Javascript")
+skill4 = Skill.create(name: "React")
+skill5 = Skill.create(name: "Panic")
+skill6 = Skill.create(name: "Vomit")

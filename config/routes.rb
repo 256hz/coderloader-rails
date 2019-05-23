@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
-  resources :jobs
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do
+    namespace :v1 do
+      resources :honors, only: [:index, :update, :destroy]
+      resources :interests, only: [:index, :create, :update, :destroy]
+      resources :jobs, only: [:index, :create, :update, :destroy]
+      resources :links, only: [:index, :create, :update, :destroy]
+      resources :skills, only: [:index, :create, :update, :destroy]
+    end
+  end
 end

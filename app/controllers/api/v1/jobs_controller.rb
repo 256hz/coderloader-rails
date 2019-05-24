@@ -36,7 +36,7 @@ class Api::V1::JobsController < ApplicationController
   private
 
   def job_params
-    params.permit(:company, :title, :summary, :start_month, :start_year, :end_month, :end_year)
+    params.permit(:company, :title, :summary, :start_month, :start_year, :end_month, :end_year, :responsibilities, :skills_used)
   end
 
   def find_job

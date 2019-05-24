@@ -86,7 +86,8 @@ skill4 = Skill.create(name: "React")
 skill5 = Skill.create(name: "Panic")
 skill6 = Skill.create(name: "Vomit")
 
-user = User.create!(first_name: 'douj', last_name: '-la', 
-    email:"methane@seas.org", phone: '4445556666', 
+user = User.create!(first_name: 'hermin', last_name: 'merble',
+    email:"methane@seas.org", phone: '4445556666',
     bio:'The bio should be kinda long so we can see how it goes when somebody really rambles on about themselves and talks about like their pets and the time they saw Jeff Bezos once and his aura made them a programming God, an unforgiving Old Testament programming God who often arbitrarily destroys entire settlements with what I think were meteors, and this obviously makes you more employable',
-    intro:'One time I pressed a key and a computer did a thing that I wanted it to do. Only one time, but it was pretty cool.')
+    intro:'One time I pressed a key and a computer did a thing that I wanted it to do. Only one time, but it was pretty cool.',
+    img_url: 'http://4.bp.blogspot.com/-gBShNV-VyoI/TuoQOhCE1dI/AAAAAAAACXc/tp9YZ_Rpn9Q/s1600/memes+en+hd8.jpg')

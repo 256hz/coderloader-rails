@@ -29,7 +29,7 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def destory
-    @user.destory()
+    @user.destroy()
     render json: @user
   end
 

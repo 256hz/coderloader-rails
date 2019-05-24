@@ -39,7 +39,7 @@ class Api::V1::JobsController < ApplicationController
     params.permit(:company, :title, :summary, :start_month, :start_year, :end_month, :end_year)
   end
 
-  def find_link
+  def find_job
     @job = Job.find(params[:id])
   end
 end

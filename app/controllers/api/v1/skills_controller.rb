@@ -2,8 +2,8 @@ class Api::V1::SkillsController < ApplicationController
   before_action :find_skill, only: [:destroy, :update]
 
   def index
-    @skill = Skill.all
-    render json: @skill
+    @skills = Skill.all
+    render json: @skills
   end
 
   def show
@@ -11,7 +11,7 @@ class Api::V1::SkillsController < ApplicationController
   end
 
   def create
-    @skill = Skill.new(job_params)
+    @skill = Skill.new(skill_params)
     if @skill.save
       render json: @skill, status: :accepted
     else
@@ -20,7 +20,7 @@ class Api::V1::SkillsController < ApplicationController
   end
 
   def update
-    @skill.update(job_params)
+    @skill.update(skill_params)
     if @skill.save
       render json: @skill, status: :accepted
     else

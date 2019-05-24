@@ -1,5 +1,5 @@
 class Api::V1::HonorsController < ApplicationController
-  before_action :find_album, only: [:destroy, :update]
+  before_action :find_honor, only: [:destroy, :update]
 
   def index
     @honors = Honor.all

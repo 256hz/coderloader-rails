@@ -11,31 +11,32 @@ Honor.destroy_all
 Skill.destroy_all
 Interest.destroy_all
 Link.destroy_all
+User.destroy_all
 # Memory.destroy_all
 # Love.destroy_all
 # Life.destroy_all
 
 job1 = Job.create!(
-    company: "Google", title: "CEO", 
-    summary: "I sold the world into advertising slavery", 
-    start_month: "Mar", start_year: 2002, 
-    end_month: "Sept", end_year: 2005, 
-    responsibilities:["Make shareholders money", "siphon off said money for myself", "destroy other industries"], 
+    company: "Google", title: "CEO",
+    summary: "I sold the world into advertising slavery",
+    start_month: "Mar", start_year: 2002,
+    end_month: "Sept", end_year: 2005,
+    responsibilities:["Make shareholders money", "siphon off said money for myself", "destroy other industries"],
     skills_used:["Sociopathy", "Severe undiagnosed trauma", "Acting"])
 
 job2 = Job.create(
-    company: "Tesla", title: "Janitor", 
-    summary: "Too much coke, did this in a halfway house", 
-    start_month: "Oct", start_year: 2007, 
-    end_month: "Feb", end_year: 2008, 
-    responsibilities:["Clean Elon Musk's Musk", "Detail Elon's Tesla", "Try to stay sober"], 
+    company: "Tesla", title: "Janitor",
+    summary: "Too much coke, did this in a halfway house",
+    start_month: "Oct", start_year: 2007,
+    end_month: "Feb", end_year: 2008,
+    responsibilities:["Clean Elon Musk's Musk", "Detail Elon's Tesla", "Try to stay sober"],
     skills_used:["Willpower", "Manual labor", "Positive self-outlook"])
 
 job3 = Job.create(
-    company: "None", title: "None", 
-    summary: "Tesla threw me out after an incident", 
-    start_month: "Feb", start_year: 2008, 
-    responsibilities:["Panhandling", "Busking", "Methadone"], 
+    company: "None", title: "None",
+    summary: "Tesla threw me out after an incident",
+    start_month: "Feb", start_year: 2008,
+    responsibilities:["Panhandling", "Busking", "Methadone"],
     skills_used:["Urgent care", "Bargaining with police", "Neutral self-outlook"])
 
 honor1 = Honor.create!(
@@ -84,3 +85,5 @@ skill3 = Skill.create(name: "Javascript")
 skill4 = Skill.create(name: "React")
 skill5 = Skill.create(name: "Panic")
 skill6 = Skill.create(name: "Vomit")
+
+user = User.create!(first_name: 'douj', last_name: '-la', email:"urmom@lol.com", phone: '4445556666')

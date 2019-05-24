@@ -22,7 +22,8 @@ job1 = Job.create!(
     start_month: "Mar", start_year: 2002,
     end_month: "Sept", end_year: 2005,
     responsibilities:["Make shareholders money", "siphon off said money for myself", "destroy other industries"],
-    skills_used:["Sociopathy", "Severe undiagnosed trauma", "Acting"])
+    skills_used:["Sociopathy", "Severe undiagnosed trauma", "Acting"],
+    img_url: 'https://blog.hubspot.com/hubfs/image8-2.jpg')
 
 job2 = Job.create(
     company: "Tesla", title: "Janitor",
@@ -30,14 +31,24 @@ job2 = Job.create(
     start_month: "Oct", start_year: 2007,
     end_month: "Feb", end_year: 2008,
     responsibilities:["Clean Elon Musk's Musk", "Detail Elon's Tesla", "Try to stay sober"],
-    skills_used:["Willpower", "Manual labor", "Positive self-outlook"])
+    skills_used:["Willpower", "Manual labor", "Positive self-outlook"],
+    img_url: 'https://i.etsystatic.com/13567406/r/il/22675e/1497993443/il_794xN.1497993443_qs36.jpg')
 
 job3 = Job.create(
     company: "None", title: "None",
     summary: "Tesla threw me out after an incident",
     start_month: "Feb", start_year: 2008,
     responsibilities:["Panhandling", "Busking", "Methadone"],
-    skills_used:["Urgent care", "Bargaining with police", "Neutral self-outlook"])
+    skills_used:["Urgent care", "Bargaining with police", "Neutral self-outlook"],
+    img_url: 'https://i.etsystatic.com/13567406/r/il/22675e/1497993443/il_794xN.1497993443_qs36.jpg')
+
+job4 = Job.create(
+    company: "Halo", title: "Master Chief",
+    summary: "Interim professor in Philosophy. Focus on the nature of violence in the history of humanity and its effects on our psyche. My own experiences are the primary source.",
+    start_month: "Feb", start_year: 2552,
+    responsibilities:["Thinking", "Writing", "Killing (the ego)"],
+    skills_used:["Intelligence", "Intimidation", "Fear of Change"],
+    img_url: 'https://i.etsystatic.com/6532091/d/il/c7809c/1741012392/il_340x270.1741012392_93d6.jpg?version=1')
 
 honor1 = Honor.create!(
     name: "MVP", summary: "I made like a lot of money",

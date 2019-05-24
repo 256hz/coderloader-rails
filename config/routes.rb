@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :links, only: [:index, :create, :update, :destroy]
       resources :skills, only: [:index, :create, :update, :destroy]
       resources :users, only: [:index, :create, :update, :destroy]
+      resources :githubs, only: [:index, :create, :update, :destroy]
     end
   end
 end

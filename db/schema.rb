@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_24_202557) do
+ActiveRecord::Schema.define(version: 2019_05_24_220403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "githubs", force: :cascade do |t|
+    t.string "repo_owner"
+    t.string "repo_name"
+    t.string "img_url"
+    t.string "summary"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "honors", force: :cascade do |t|
     t.string "name"
@@ -22,6 +32,7 @@ ActiveRecord::Schema.define(version: 2019_05_24_202557) do
     t.integer "year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
   create_table "interests", force: :cascade do |t|
@@ -29,6 +40,7 @@ ActiveRecord::Schema.define(version: 2019_05_24_202557) do
     t.string "summary"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
   create_table "jobs", force: :cascade do |t|
@@ -44,6 +56,7 @@ ActiveRecord::Schema.define(version: 2019_05_24_202557) do
     t.string "responsibilities", default: [], array: true
     t.string "skills_used", default: [], array: true
     t.string "img_url"
+    t.integer "user_id"
   end
 
   create_table "links", force: :cascade do |t|
@@ -52,6 +65,7 @@ ActiveRecord::Schema.define(version: 2019_05_24_202557) do
     t.string "summary"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
   create_table "skills", force: :cascade do |t|
@@ -59,6 +73,7 @@ ActiveRecord::Schema.define(version: 2019_05_24_202557) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "img_url"
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -71,6 +86,7 @@ ActiveRecord::Schema.define(version: 2019_05_24_202557) do
     t.string "bio"
     t.string "intro"
     t.string "img_url"
+    t.string "github_username"
   end
 
 end

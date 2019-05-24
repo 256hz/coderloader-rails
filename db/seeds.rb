@@ -86,4 +86,4 @@ skill4 = Skill.create(name: "React")
 skill5 = Skill.create(name: "Panic")
 skill6 = Skill.create(name: "Vomit")
 
-user = User.create!(first_name: 'douj', last_name: '-la', email:"urmom@lol.com", phone: '4445556666')
+user = User.create!(first_name: 'douj', last_name: '-la', email:"methane@seas.org", phone: '4445556666')

@@ -118,12 +118,21 @@ link3 = Link.create(
     user_id: user.id
 )
 
-skill1 = Skill.create!(name: "Ruby", user_id: user.id)
-skill2 = Skill.create(name: "Rails", user_id: user.id)
-skill3 = Skill.create(name: "Javascript", user_id: user.id)
-skill4 = Skill.create(name: "React", user_id: user.id)
-skill5 = Skill.create(name: "Panic", user_id: user.id)
-skill6 = Skill.create(name: "Vomit", user_id: user.id)
+Skill.create!(name: "React", 
+    img_url: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png", 
+    user_id: user.id)
+Skill.create(name: "Rails", 
+    img_url: "http://png-2.findicons.com/files/icons/1607/ruby_on_rails/512/ror_logo.png", 
+    user_id: user.id)
+Skill.create(name: "Javascript", 
+    img_url:"https://img.icons8.com/color/48/000000/javascript.png", 
+    user_id: user.id)
+Skill.create(name: "Ruby", 
+    img_url: "https://img.icons8.com/color/48/000000/ruby-programming-language.png", 
+    user_id: user.id)
+Skill.create(name: "Python", 
+    img_url: "http://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-python-icon.png", 
+    user_id: user.id)
 
 github1 = Github.create!(repo_owner: '256hz', repo_name: 'portrollio-react', 
     img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fadventuresofelguapo.files.wordpress.com%2F2014%2F06%2Ftroll-face.png&f=1',
@@ -139,13 +148,4 @@ github4 = Github.create(repo_owner: '256hz', repo_name: 'portrollio-rails',
     summary: 'React frontend of portfolio generator', user_id: user.id)
 github5 = Github.create!(repo_owner: '256hz', repo_name: 'portrollio-react', 
     img_url: 'https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fi.ebayimg.com%2Fimages%2Fi%2F222046557353-0-1%2Fs-l1000.jpg&f=1',
-    summary: 'React frontend of portfolio generator', user_id: user.id)
-github6 = Github.create(repo_owner: '256hz', repo_name: 'portrollio-rails', 
-    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimg1.etsystatic.com%2F009%2F1%2F7939995%2Fil_fullxfull.467082161_j831.jpg&f=1',
-    summary: 'React frontend of portfolio generator', user_id: user.id)
-github7 = Github.create!(repo_owner: '256hz', repo_name: 'portrollio-react', 
-    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F183%2F618%2Foriginal%2Fvector-cute-cartoon-troll-character-illustration.jpg&f=1',
-    summary: 'React frontend of portfolio generator', user_id: user.id)
-github8 = Github.create(repo_owner: '256hz', repo_name: 'portrollio-rails', 
-    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fguildberkeley.files.wordpress.com%2F2016%2F03%2Frivers-run-red.jpg&f=1',
     summary: 'React frontend of portfolio generator', user_id: user.id)

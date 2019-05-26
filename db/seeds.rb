@@ -12,11 +12,13 @@ Skill.destroy_all
 Interest.destroy_all
 Link.destroy_all
 User.destroy_all
+Github.destroy_all
+
 # Memory.destroy_all
 # Love.destroy_all
 # Life.destroy_all
 
-user = User.create!(first_name: 'hermin', last_name: 'merble',
+user = User.create!(first_name: 'Hermin', last_name: 'Merble',
     email:"methane@seas.org", phone: '4445556666',
     bio:'The bio should be kinda long so we can see how it goes when somebody really rambles on about themselves and talks about like their pets and the time they saw Jeff Bezos once and his aura made them a programming God, an unforgiving Old Testament programming God who often arbitrarily destroys entire settlements with what I think were meteors, and this obviously makes you more employable',
     intro:'One time I pressed a key and a computer did a thing that I wanted it to do. Only one time, but it was pretty cool.',
@@ -45,15 +47,15 @@ job2 = Job.create(
     user_id: user.id
 )
 
-job3 = Job.create(
-    company: "None", title: "None",
-    summary: "Tesla threw me out after an incident",
-    start_month: "Feb", start_year: 2008,
-    responsibilities:["Panhandling", "Busking", "Methadone"],
-    skills_used:["Urgent care", "Bargaining with police", "Neutral self-outlook"],
-    img_url: 'https://i.etsystatic.com/13567406/r/il/22675e/1497993443/il_794xN.1497993443_qs36.jpg',
-    user_id: user.id
-)
+# job3 = Job.create(
+#     company: "None", title: "None",
+#     summary: "Tesla threw me out after an incident",
+#     start_month: "Feb", start_year: 2008,
+#     responsibilities:["Panhandling", "Busking", "Methadone"],
+#     skills_used:["Urgent care", "Bargaining with police", "Neutral self-outlook"],
+#     img_url: 'https://i.etsystatic.com/13567406/r/il/22675e/1497993443/il_794xN.1497993443_qs36.jpg',
+#     user_id: user.id
+# )
 
 job4 = Job.create(
     company: "Halo", title: "Master Chief",
@@ -67,19 +69,19 @@ job4 = Job.create(
 
 honor1 = Honor.create!(
     name: "MVP", summary: "I made like a lot of money",
-    month: "Dec", year: "2003",
+    month: "Feb", year: "2002",
     user_id: user.id
 )
 
 honor2 = Honor.create(
-    name: "MVP", summary: "I made like a lot of money",
+    name: "MVP2", summary: "I made like a lot of money",
     month: "Dec", year: "2003",
     user_id: user.id
 )
 
 honor3 = Honor.create(
-    name: "MVP", summary: "I made like a lot of money",
-    month: "Dec", year: "2003",
+    name: "MVP3", summary: "I made like a lot of money",
+    month: "Mar", year: "2004",
     user_id: user.id
 )
 

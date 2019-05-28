@@ -20,6 +20,7 @@ Github.destroy_all
 
 user = User.create!(first_name: 'Hermin', last_name: 'Merble',
     email:"methane@seas.org", phone: '4445556666',
+    username:"hermin", password: "merble",
     title:"Full Stack Web Developer",
     bio:'The bio should be kinda long so we can see how it goes when somebody really rambles on about themselves and talks about like their pets and the time they saw Linus Torvalds once and his aura made them a programming God, an unforgiving Old Testament programming God who often arbitrarily destroys entire codebases with what I think were meteors, and this obviously makes you more employable',
     intro:'One time I pressed a key and a computer did a thing that I wanted it to do. Only one time, but it was pretty cool.',

@@ -1,5 +1,7 @@
 class Api::V1::GithubsController < ApplicationController
   before_action :find_github, only: [:destroy, :update]
+  skip_before_action :authorized, except: [:update]
+
 
   def index
     @githubs = Github.all

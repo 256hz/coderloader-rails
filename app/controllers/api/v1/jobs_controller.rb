@@ -1,5 +1,6 @@
 class Api::V1::JobsController < ApplicationController
   before_action :find_job, only: [:destroy, :update]
+  skip_before_action :authorized, except: [:update]
 
   def index
     @jobs = Job.all

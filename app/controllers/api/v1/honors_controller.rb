@@ -1,5 +1,6 @@
 class Api::V1::HonorsController < ApplicationController
   before_action :find_honor, only: [:destroy, :update]
+  skip_before_action :authorized, except: [:update]
 
   def index
     @honors = Honor.all

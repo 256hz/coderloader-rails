@@ -28,7 +28,7 @@ class Api::V1::GithubsController < ApplicationController
     end
   end
 
-  def destory
+  def destroy
     @github.destroy()
     render json: @github
   end

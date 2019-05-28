@@ -1,5 +1,6 @@
 class Api::V1::SkillsController < ApplicationController
   before_action :find_skill, only: [:destroy, :update]
+  skip_before_action :authorized, except: [:update]
 
   def index
     @skills = Skill.all

@@ -20,9 +20,10 @@ Github.destroy_all
 
 user = User.create!(first_name: 'Hermin', last_name: 'Merble',
     email:"methane@seas.org", phone: '4445556666',
-    bio:'The bio should be kinda long so we can see how it goes when somebody really rambles on about themselves and talks about like their pets and the time they saw Jeff Bezos once and his aura made them a programming God, an unforgiving Old Testament programming God who often arbitrarily destroys entire settlements with what I think were meteors, and this obviously makes you more employable',
+    title:"Full Stack Web Developer",
+    bio:'The bio should be kinda long so we can see how it goes when somebody really rambles on about themselves and talks about like their pets and the time they saw Linus Torvalds once and his aura made them a programming God, an unforgiving Old Testament programming God who often arbitrarily destroys entire codebases with what I think were meteors, and this obviously makes you more employable',
     intro:'One time I pressed a key and a computer did a thing that I wanted it to do. Only one time, but it was pretty cool.',
-    img_url: 'http://4.bp.blogspot.com/-gBShNV-VyoI/TuoQOhCE1dI/AAAAAAAACXc/tp9YZ_Rpn9Q/s1600/memes+en+hd8.jpg'
+    img_url: '/images/abe-avataaars-glasses-circle-transparent.png'
 )
 
 job1 = Job.create!(
@@ -61,26 +62,26 @@ job4 = Job.create(
     img_url: 'https://i.etsystatic.com/6532091/d/il/c7809c/1741012392/il_340x270.1741012392_93d6.jpg?version=1',
     user_id: user.id)
 
-honor1 = Honor.create!(
-    name: "MVP", summary: "I made like a lot of money",
+Honor.create!(name: "MVP", 
+    summary: "I made like a lot of money",
     month: "Feb", year: "2002",
     user_id: user.id)
-honor2 = Honor.create(
-    name: "MVP2", summary: "I made like a lot of money",
+Honor.create(name: "MVP2", 
+    summary: "I made like a lot of money",
     month: "Dec", year: "2003",
     user_id: user.id)
-honor3 = Honor.create(
-    name: "MVP3", summary: "I made like a lot of money",
+Honor.create(name: "MVP3", 
+    summary: "I made like a lot of money",
     month: "Mar", year: "2004",
     user_id: user.id)
 
-interest1 = Interest.create!(
+Interest.create!(
     name: "Machiavelli", summary: "This guy really knew how to screw people over",
     user_id: user.id)
-interest2 = Interest.create!(
+Interest.create(
     name: "Acoustic guitar", summary: "I can play Wonderwall",
     user_id: user.id)
-interest1 = Interest.create!(
+Interest.create(
     name: "Reddit", summary: "What a bunch of degenerates",
     user_id: user.id)
 

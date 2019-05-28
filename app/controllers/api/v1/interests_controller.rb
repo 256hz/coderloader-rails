@@ -29,7 +29,7 @@ class Api::V1::InterestsController < ApplicationController
   end
 
   def destory
-    @interest.destory()
+    @interest.destroy()
     render json: @interest
   end
 

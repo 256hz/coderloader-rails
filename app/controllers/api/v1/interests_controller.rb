@@ -1,6 +1,6 @@
 class Api::V1::InterestsController < ApplicationController
   before_action :find_interest, only: [:destroy, :update]
-  skip_before_action :authorized, except: [:update]
+  skip_before_action :authorized, only: [:index, :show]
 
   def index
     @interests = Interest.all

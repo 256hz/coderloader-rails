@@ -5,16 +5,16 @@ fetch("http://localhost:3000/api/v1/users", {
         "Accept": "application/json",
     },
     body: JSON.stringify({
-        username: "noob1",
-        password: "noob1",
-        first_name: "noob1", 
-        last_name: "noob1", 
-        email: "noob1", 
-        phone: "noob1", 
-        img_url: "noob1", 
-        bio: "noob1",
-        intro: "noob1", 
-        title: "noob1"
+        username: "noob0",
+        password: "noob0",
+        first_name: "noob0", 
+        last_name: "noob0", 
+        email: "noob0", 
+        phone: "noob0", 
+        img_url: "noob0", 
+        bio: "noob0",
+        intro: "noob0", 
+        title: "noob0"
     })
 }).then( res => res.json() )
     .then(console.log)

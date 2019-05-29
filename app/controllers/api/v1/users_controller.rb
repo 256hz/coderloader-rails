@@ -14,7 +14,8 @@ class Api::V1::UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     def create
-      @user = User.create!(user_params)
+      @user = User.find_or_create_by!(user_params)
+      puts "@user:", @user
       if @user.valid?
         render json: { user: UserSerializer.new(@user) }, status: :created
       else
@@ -32,7 +33,7 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
-  def destory
+  def destroy
     @user.destroy()
     render json: @user
   end

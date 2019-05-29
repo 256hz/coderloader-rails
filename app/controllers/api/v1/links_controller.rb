@@ -1,6 +1,6 @@
 class Api::V1::LinksController < ApplicationController
   before_action :find_link, only: [:destroy, :update]
-  skip_before_action :authorized, except: [:update]
+  skip_before_action :authorized, only: [:index, :show]
 
   def index
     @links = Link.all

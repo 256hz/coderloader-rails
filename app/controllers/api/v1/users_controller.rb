@@ -1,6 +1,6 @@
 class Api::V1::UsersController < ApplicationController
   before_action :find_user, only: [:destroy, :update, :show]
-  skip_before_action :authorized, except: [:update]
+  skip_before_action :authorized, only: [:index, :show]
 
   def index
     @users = User.all

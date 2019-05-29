@@ -22,6 +22,7 @@ class Api::V1::JobsController < ApplicationController
 
   def update
     @job.update(job_params)
+    puts "job_params:", job_params
     if @job.save
       render json: @job, status: :accepted
     else
@@ -37,7 +38,9 @@ class Api::V1::JobsController < ApplicationController
   private
 
   def job_params
-    params.permit(:company, :title, :summary, :start_month, :start_year, :end_month, :end_year, :responsibilities, :skills_used)
+    params.permit(:company, :id, :img_url, :title, :summary, 
+      :start_month, :start_year, :end_month, :end_year, 
+      :responsibilities => [], :skills_used => [])
   end
 
   def find_job

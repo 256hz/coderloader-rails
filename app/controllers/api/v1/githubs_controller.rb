@@ -13,7 +13,7 @@ class Api::V1::GithubsController < ApplicationController
   end
 
   def create
-    @github = Github.new(job_params)
+    @github = Github.new(github_params)
     if @github.save
       render json: @github, status: :accepted
     else
@@ -22,7 +22,7 @@ class Api::V1::GithubsController < ApplicationController
   end
 
   def update
-    @github.update(job_params)
+    @github.update(github_params)
     if @github.save
       render json: @github, status: :accepted
     else

@@ -31,7 +31,7 @@ job1 = Job.create!(
     company: "Google", title: "CEO",
     summary: "I sold the world into advertising slavery",
     start_month: "Mar", start_year: 2002,
-    end_month: "Sept", end_year: 2005,
+    end_month: "Sep", end_year: 2005,
     responsibilities:["Make shareholders money", "siphon off said money for myself", "destroy other industries"],
     skills_used:["Sociopathy", "Severe undiagnosed trauma", "Acting"],
     img_url: 'https://blog.hubspot.com/hubfs/image8-2.jpg',

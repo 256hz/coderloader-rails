@@ -38,7 +38,7 @@ class Api::V1::GithubsController < ApplicationController
   private
 
   def github_params
-    params.permit(:first_name, :last_name, :email, :phone, :img_url)
+    params.permit(:repo_owner, :repo_name, :img_url, :summary, :contribution, :user_id)
   end
 
   def find_github

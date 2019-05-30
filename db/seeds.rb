@@ -101,22 +101,22 @@ link3 = Link.create(
 
 Skill.create!(name: "React.js", 
     img_url: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png", 
-    user_id: user.id)
+    order_id: 0, user_id: user.id)
 Skill.create(name: "Semantic UI React", 
-        img_url: "https://react.semantic-ui.com/logo.png", 
-        user_id: user.id)
+    img_url: "https://react.semantic-ui.com/logo.png", 
+    order_id: 1, user_id: user.id)
 Skill.create(name: "Rails", 
     img_url: "http://png-2.findicons.com/files/icons/1607/ruby_on_rails/512/ror_logo.png", 
-    user_id: user.id)
+    order_id: 2, user_id: user.id)
 Skill.create(name: "ES6 Javascript", 
     img_url:"https://www.shareicon.net/data/512x512/2016/07/06/106573_software_512x512.png", 
-    user_id: user.id)
+    order_id: 3, user_id: user.id)
 Skill.create(name: "Ruby", 
     img_url: "https://image.flaticon.com/icons/png/512/919/919842.png", 
-    user_id: user.id)
+    order_id: 4, user_id: user.id)
 Skill.create(name: "Python", 
     img_url: "http://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-python-icon.png", 
-    user_id: user.id)
+    order_id: 5, user_id: user.id)
 
 github1 = Github.create!(repo_owner: '256hz', repo_name: 'portrollio-react', 
     img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fadventuresofelguapo.files.wordpress.com%2F2014%2F06%2Ftroll-face.png&f=1',

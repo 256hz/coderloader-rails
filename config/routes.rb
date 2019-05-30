@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       resources :interests, only: [:index, :create, :update, :destroy]
       resources :jobs, only: [:index, :create, :update, :destroy]
       resources :links, only: [:index, :create, :update, :destroy]
-      resources :skills, only: [:index, :create, :update, :destroy]
+      resources :skills
       resources :users, only: [:index, :create, :update, :destroy]
       resources :githubs, only: [:index, :create, :update, :destroy]
       post '/login', to: 'auth#create'

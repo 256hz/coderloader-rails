@@ -1,5 +1,5 @@
 class Api::V1::SkillsController < ApplicationController
-  before_action :find_skill, only: [:destroy, :update]
+  before_action :find_skill, only: [:show, :destroy, :update]
   skip_before_action :authorized, only: [:index, :show]
 
   def index
@@ -37,7 +37,7 @@ class Api::V1::SkillsController < ApplicationController
   private
 
   def skill_params
-    params.permit(:name, :img_url, :order_id)
+    params.permit(:name, :order_id, :img_url, :user_id)
   end
 
   def find_skill

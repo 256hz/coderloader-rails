@@ -37,7 +37,7 @@ class Api::V1::InterestsController < ApplicationController
   private
 
   def interest_params
-    params.permit(:name, :summary)
+    params.permit(:name, :summary, :order_id, :user_id)
   end
 
   def find_interest

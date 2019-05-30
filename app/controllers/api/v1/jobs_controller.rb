@@ -39,7 +39,7 @@ class Api::V1::JobsController < ApplicationController
 
   def job_params
     params.permit(:company, :id, :img_url, :title, :summary,
-      :start_month, :start_year, :end_month, :end_year, :user_id,
+      :start_month, :start_year, :end_month, :end_year, :user_id, :order_id,
       :responsibilities => [], :skills_used => [])
   end
 

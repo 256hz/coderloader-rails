@@ -37,7 +37,7 @@ class Api::V1::HonorsController < ApplicationController
   private
 
   def honor_params
-    params.permit(:name, :summary, :month, :year)
+    params.permit(:name, :summary, :month, :year, :order_id, :user_id)
   end
 
   def find_honor

@@ -24,7 +24,8 @@ user = User.create!(first_name: 'Hermin', last_name: 'Merble',
     title:"Full Stack Web Developer",
     bio:'The bio should be kinda long so we can see how it goes when somebody really rambles on about themselves and talks about like their pets and the time they saw Linus Torvalds once and his aura made them a programming God, an unforgiving Old Testament programming God who often arbitrarily destroys entire codebases with what I think were meteors, and this obviously makes you more employable',
     intro:'One time I pressed a key and a computer did a thing that I wanted it to do. Only one time, but it was pretty cool.',
-    img_url: '/images/abe-avataaars-glasses-circle-transparent.png'
+    img_url: '/images/abe-avataaars-glasses-circle-transparent.png',
+    color_theme: 'theme-default'
 )
 job1 = Job.create!(
     company: "Google", title: "CEO",
@@ -50,7 +51,7 @@ job3 = Job.create(
     company: "None", title: "None",
     summary: "Tesla threw me out after an incident",
     start_month: "Feb", start_year: 2008,
-    responsibilities:["Urgent care","Bargaining with police","Neutral self-outlook"]
+    responsibilities:["Urgent care","Bargaining with police","Neutral self-outlook"],
     skills_used:["SURVIVE"],
     img_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/ProhibitionSign2.svg/1024px-ProhibitionSign2.svg.png',
     order_id: 2, user_id: user.id

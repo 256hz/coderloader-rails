@@ -45,7 +45,8 @@ class Api::V1::UsersController < ApplicationController
       :username, :password,
       :first_name, :last_name,
       :email, :phone, :img_url,
-      :bio, :intro, :title
+      :bio, :intro, :title,
+      :color_theme
     )
   end
 

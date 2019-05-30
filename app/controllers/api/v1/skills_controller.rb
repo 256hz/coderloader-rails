@@ -37,7 +37,7 @@ class Api::V1::SkillsController < ApplicationController
   private
 
   def skill_params
-    params.permit(:name, :order_id, :img_url)
+    params.permit(:name, :order_id, :img_url, :user_id)
   end
 
   def find_skill

@@ -36,7 +36,7 @@ job1 = Job.create!(
 )
 job2 = Job.create(
     company: "Abetek", title: "Designer/Manufacturer",
-    summary: "I have two products: a battery caddy charging system and a microphone accessory for film. Both are sold online and in audio specialty stores."
+    summary: "I have two products: a battery caddy charging system and a microphone accessory for film. Both are sold online and in audio specialty stores.",
     start_month: "Jul", start_year: 2014,
     responsibilities:["Design","Branding","B2B Sales"],
     skills_used:["Startup creation", "Bootstrapping - I 3D printed the first microphone accessories myself","Using industry connections to further reach"],
@@ -127,7 +127,7 @@ Skill.create(name: "Python",
 Github.create!(repo_owner: '256hz', repo_name: 'coderloader-react', 
     img_url: 'https://www.emoji.co.uk/files/microsoft-emojis/symbols-windows10/10158-squared-cl.png',
     summary: 'React.js frontend of portfolio generator/editor', 
-    contribution: 'JWT authorization, React-Router anchor tags, styling, Semantic gridding, component logic'
+    contribution: 'JWT authorization, React-Router anchor tags, styling, Semantic gridding, component logic',
     order_id: 0, user_id: user.id)
 Github.create(repo_owner: '256hz', repo_name: 'coderloader-rails', 
     img_url: 'https://www.emoji.co.uk/files/microsoft-emojis/symbols-windows10/10158-squared-cl.png',

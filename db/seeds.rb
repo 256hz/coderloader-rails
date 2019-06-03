@@ -26,7 +26,7 @@ user = User.create!(first_name: 'Abe', last_name: 'Dolinger',
 
 job1 = Job.create!(
     company: "Digital Pavilion Electronics", title: "Lead Product Engineer",
-    summary: "I lead a small product design department with wide-ranging capabilities.  We made everything from consumer audio electronics to grilling tools to wireless chargers.  I started as a designer and left as lead."
+    summary: "I lead a small product design department with wide-ranging capabilities.  We made everything from consumer audio electronics to grilling tools to wireless chargers.  Started as designer and left as lead.",
     start_month: "Apr", start_year: 2016,
     end_month: "Mar", end_year: 2019,
     responsibilities:["CAD for manufacturing", "Market research / viability studies", "Professional product renders", "Prototyping (rapid/mechanical/photo finish)", "Packaging design", "Working with contract manufacturers and suppliers"],
@@ -39,7 +39,7 @@ job2 = Job.create(
     summary: "I have two products: a battery caddy charging system and a microphone accessory for film. Both are sold online and in audio specialty stores."
     start_month: "Jul", start_year: 2014,
     responsibilities:["Design","Branding","B2B Sales"],
-    skills_used:["Startup creation", "Bootstrapping - I 3D printed the first microphone accessories myself","Design and addressing user needs"],
+    skills_used:["Startup creation", "Bootstrapping - I 3D printed the first microphone accessories myself","Using industry connections to further reach"],
     img_url: 'http://static1.squarespace.com/static/55c16371e4b0aa531a67cdf4/t/55e2014de4b00445ea1b6322/1498575463250/?format=1500w',
     order_id: 1, user_id: user.id
 )
@@ -125,18 +125,18 @@ Skill.create(name: "Python",
     order_id: 6, user_id: user.id)
 
 Github.create!(repo_owner: '256hz', repo_name: 'coderloader-react', 
-    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fadventuresofelguapo.files.wordpress.com%2F2014%2F06%2Ftroll-face.png&f=1',
+    img_url: 'https://www.emoji.co.uk/files/microsoft-emojis/symbols-windows10/10158-squared-cl.png',
     summary: 'React.js frontend of portfolio generator/editor', 
-    contribution: 'Semantic integration', 
+    contribution: 'JWT authorization, React-Router anchor tags, styling, Semantic gridding, component logic'
     order_id: 0, user_id: user.id)
 Github.create(repo_owner: '256hz', repo_name: 'coderloader-rails', 
-    img_url: 'https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia.salon.com%2F2013%2F07%2Ftroll_doll.jpg&f=1',
+    img_url: 'https://www.emoji.co.uk/files/microsoft-emojis/symbols-windows10/10158-squared-cl.png',
     summary: 'Ruby on Rails backend of portfolio generator/editor', 
-    contribution: 'Initial setup of Postgres DB, API, and serializers', 
+    contribution: 'Initial setup of Postgres DB, API, and serializers, JWT, controller logic', 
     order_id: 1, user_id: user.id)
 Github.create(repo_owner: '256hz', repo_name: 'green-up-seattle', 
     img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fthatwasabitmental.files.wordpress.com%2F2014%2F07%2Ftroll-poster.jpg&f=1',
-    contribution: 'I forget',
+    contribution: 'Leaderboard, automated DB seeding, ',
     summary: 'React frontend of portfolio generator', 
     order_id: 2, user_id: user.id)
 Github.create(repo_owner: 'ifmeorg', repo_name: 'ifme', 

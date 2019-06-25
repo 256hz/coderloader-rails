@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'portfolio.256hz.com'
+    origins 'portfolio.256hz.com', 'localhost:3000'
 
     resource '*',
       headers: :any,

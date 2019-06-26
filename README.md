@@ -23,9 +23,11 @@ Authentication is performed with JWT and Bcrypt.  All `update` actions require t
 - Upload to hosting (for example, [Heroku](http://www.heroku.com).  A good guide to deploying a Rails/React app on Heroku can be found [here](https://medium.com/coding-in-simple-english/deploying-rails-react-app-to-heroku-35e1829242ab).
 - Set up the remote database.  If you're set up on Heroku, run `heroku login`, `heroku run rails db:migrate`, and `heroku run rails db:seed`.  (There's no need to run `db:setup` as Heroku takes care of this step for you.)
 - Test the backend by going to `your.url/api/v1/skills` or `your.url/api/v1/users`.  In your `/config/routes.rb`, everything has been `namespace`d inside `api/v1/`.  If you don't wish to follow this convention, simply remove the two `namespace` method calls.  The output from `/skills/` should look something like this:
+
 <image src="/public/downloads/api-skills-response.png" />
-- Note the root URL of the hosted project (i.e. http://your.url/api/v1/).  You'll need this to point the front-end repo towards. 
-- Install the [React front-end](https://github.com/256hz/coderloader-react).
+
+- Note the root URL of the hosted project (i.e. `http://your.url/api/v1/`).  Your frontend will need to be pointed here. 
+- You're halfway there!  Now you can install the [React front-end](https://github.com/256hz/coderloader-react).
 
 ### Thanks!
 Any changes you want to recommend, simply fork and make a PR, or find Abe on twitter (@256hertz). Happy coding!

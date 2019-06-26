@@ -14,56 +14,91 @@ Link.destroy_all
 User.destroy_all
 Github.destroy_all
 
-user = User.create!(first_name: 'Abe', last_name: 'Dolinger',
-    email:"a.d@256hz.com", phone: '2679685414',
+user = User.create!(first_name: 'Firstname', last_name: 'Lastname',
+    email:"email@example.com", phone: '1234567890',
     username:"test", password: ENV.fetch('CODERLOADER_PASSWORD'),
     title:"Full Stack Web Developer",
-    bio:'',
-    intro:'I\'m a product designer who switched from hardware to code.  Digital forever.',
+    bio:'I can speak at length about my background and goals here',
+    intro:'My two-line elevator pitch',
     img_url: '/images/abe-avataaars-glasses-circle-transparent.png',
     color_theme: 'theme-ice'
 )
 
-job1 = Job.create!(
-    company: "Digital Pavilion Electronics", title: "Lead Product Engineer",
-    summary: "I lead a small product design department with wide-ranging capabilities.  We made everything from consumer audio electronics to grilling tools to wireless chargers.  Started as designer and left as lead.",
-    start_month: "Apr", start_year: 2016,
-    end_month: "Mar", end_year: 2019,
-    responsibilities:["CAD for manufacturing", "Market research / viability studies", "Professional product renders", "Prototyping (rapid/mechanical/photo finish)", "Packaging design", "Working with contract manufacturers and suppliers"],
-    skills_used:["Design thinking","Product development (directly with clients)","Product management","Prototyping", "CAD","Lab/systems design"],
-    img_url: 'http://www.thedigitalpavilion.com/skin/frontend/base/default/images/digital-pavilion.png',
+Job.create!(
+    company: "Example Company", title: "Code Monkey",
+    summary: "I was let loose on a bunch of typewriters, and by God, we wrote Midsummer Night's Dream.",
+    start_month: "Apr", start_year: 2018,
+    end_month: nil, end_year: nil,
+    responsibilities:["Bananas", "Monkey management", "Guard duty for shenanigans"],
+    skills_used:["Object-oriented design", "SOLID principles", "Agile methodology"],
+    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Feverestcollege.files.wordpress.com%2F2013%2F02%2F2_get-a-job-computer-key-5001294.jpg',
     order_id: 0, user_id: user.id
 )
-job2 = Job.create(
-    company: "Abetek", title: "Designer/Manufacturer",
-    summary: "I have two products: a battery caddy charging system and a microphone accessory for film. Both are sold online and in audio specialty stores.",
-    start_month: "Jul", start_year: 2014,
-    responsibilities:["Design","Branding","B2B Sales"],
-    skills_used:["Startup creation", "Bootstrapping - I 3D printed the first microphone accessories myself","Using industry connections to further reach"],
-    img_url: 'http://static1.squarespace.com/static/55c16371e4b0aa531a67cdf4/t/55e2014de4b00445ea1b6322/1498575463250/?format=1500w',
+Job.create(
+    company: "Another Example", title: "Minecraft Designer",
+    summary: "Believe it or not, I was hired by a wealthy guy to follow him around and kill creepers while he built mediocre structures.  Why he didn't just play on creative mode I'll never know.",
+    start_month: "Jul", start_year: 2016,
+    end_month: "Apr", end_year: 2018,
+    responsibilities:["Killing creepers","Mental health support","Hype man"],
+    skills_used:["Plink plonk", "Doop-de-doo", "Ding-dong"],
+    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.PPBMLiYljuluJZtFxAZwDQHaHa%26pid%3DApi',
     order_id: 1, user_id: user.id
 )
-job3 = Job.create(
-    company: "Enjyn", title: "COO",
-    summary: "A crowdfunding platform for artists and musicians.  We launched not long after Kickstarter, and successfully raised funds for some artists, but Kickstarter won!  A great experience, and my first exposure to Rails.",
-    start_month: "Sep", start_year: 2009,
-    end_month: "Jun", end_year: 2011,
+Job.create(
+    company: "Tech Giant", title: "CEO",
+    summary: "I thought it would be cool to be the real leader of the free world, so I became the CEO of Giant Tech Co.  Lo and behold, we actually do run things around here.",
+    start_month: "Sep", start_year: 2014,
+    end_month: "Jul", end_year: 2016,
     responsibilities:["MVP Design","Business management"],
     skills_used:["Product design","Startup creation","Product management"],
-    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fvacord.com%2Fwp-content%2Fuploads%2F2016%2F04%2Fenjyn-large.jpg&f=1',
+    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.execunet.com%2Fm%2Fdart-job-search-target.jpg&f=1',
     order_id: 2, user_id: user.id
 )
-job4 = Job.create(
-    company: "Freelance", title: "Location Sound Recordist",
-    summary: "Worked with small teams on some big projects.  I am credited on two Oscar-winning documentaries (\"OJ - Made in America\", \"20 Feet From Stardom\"), and films that played at Sundance and Toronto.  I've recorded hundreds of projects: corporate, independent, advertising, TV, feature films, and more.",
-    start_month: "Aug", start_year: 2006,
-    end_month: "Apr", end_year: 2016,
-    responsibilities:["Own and operate a suite of high-end portable recording equipment", "Deliver excellent audio in often challenging environments", "Work seamlessly with small and large teams of different types", "Anticipate challenges before they arise with solutions in mind"],
-    skills_used:["Audio", "Communication", "Project planning"],
-    img_url: 'http://static1.squarespace.com/static/55c16371e4b0aa531a67cdf4/t/55e2014de4b00445ea1b6322/1498575463250/?format=1500w',
-    order_id: 3, user_id: user.id
-)
 
+Skill.create!(name: "Product design", 
+    img_url: "https://cdn0.iconfinder.com/data/icons/business-2-41/129/172-512.png", 
+    order_id: 0, user_id: user.id)
+Skill.create(name: "React.js", 
+    img_url: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png", 
+    order_id: 1, user_id: user.id)
+Skill.create(name: "Semantic UI React", 
+    img_url: "https://react.semantic-ui.com/logo.png", 
+    order_id: 2, user_id: user.id)
+Skill.create(name: "Rails", 
+    img_url: "http://png-2.findicons.com/files/icons/1607/ruby_on_rails/512/ror_logo.png", 
+    order_id: 3, user_id: user.id)
+Skill.create(name: "ES6 Javascript", 
+    img_url:"https://www.shareicon.net/data/512x512/2016/07/06/106573_software_512x512.png", 
+    order_id: 4, user_id: user.id)
+Skill.create(name: "Ruby", 
+    img_url: "https://image.flaticon.com/icons/png/512/919/919842.png", 
+    order_id: 5, user_id: user.id)
+Skill.create(name: "Python", 
+    img_url: "http://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-python-icon.png", 
+    order_id: 6, user_id: user.id)
+
+Github.create!(repo_owner: 'you', repo_name: 'your-repo-1', 
+    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Favatars3.githubusercontent.com%2Fu%2F9585881%3Fs%3D400%26v%3D4&f=1',
+    summary: 'The best repo of all time', 
+    contribution: 'JWT authorization, React-Router anchor tags, styling, Semantic gridding, component logic',
+    order_id: 0, user_id: user.id)
+Github.create(repo_owner: 'you', repo_name: 'your-repo-2', 
+    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2F736x%2Fa7%2Fe8%2Ffa%2Fa7e8fa149fb23e4cbcfe9e8406b6b911.jpg&f=1',
+    summary: 'The other best repo', 
+    contribution: 'Initial setup of Postgres DB, API, and serializers, JWT, controller logic', 
+    order_id: 1, user_id: user.id)
+Github.create(repo_owner: 'you', repo_name: 'your-repo-3', 
+    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1978599420%2Felectrocat_400x400.png&f=1',
+    contribution: 'Leaderboard, automated DB seeding, auth',
+    summary: 'OK, there are at least 3 best repos', 
+    order_id: 2, user_id: user.id)
+Github.create(repo_owner: 'you', repo_name: 'your-repo-4', 
+    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Favatars2.githubusercontent.com%2Fu%2F31044959%3Fs%3D400%26v%3D4&f=1',
+    contribution: 'Chaos crystals',
+    summary: 'A four-way tie for best repo I guess', 
+    order_id: 3, user_id: user.id)
+
+# These aren't implemented yet
 Honor.create!(name: "MVP", 
     summary: "I made like a lot of money",
     month: "Feb", year: "2002",
@@ -101,46 +136,3 @@ link3 = Link.create(
     title: "Ableton", url: "https://www.ableton.com/en/",
     summary: "A website from a company from a time in a place where the sea never ends into an infinite expanse of merpeople and crystal gazing spheres of liquid thought",
     order_id: 2, user_id: user.id)
-
-Skill.create!(name: "Product design", 
-    img_url: "https://cdn0.iconfinder.com/data/icons/business-2-41/129/172-512.png", 
-    order_id: 0, user_id: user.id)
-Skill.create(name: "React.js", 
-    img_url: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png", 
-    order_id: 1, user_id: user.id)
-Skill.create(name: "Semantic UI React", 
-    img_url: "https://react.semantic-ui.com/logo.png", 
-    order_id: 2, user_id: user.id)
-Skill.create(name: "Rails", 
-    img_url: "http://png-2.findicons.com/files/icons/1607/ruby_on_rails/512/ror_logo.png", 
-    order_id: 3, user_id: user.id)
-Skill.create(name: "ES6 Javascript", 
-    img_url:"https://www.shareicon.net/data/512x512/2016/07/06/106573_software_512x512.png", 
-    order_id: 4, user_id: user.id)
-Skill.create(name: "Ruby", 
-    img_url: "https://image.flaticon.com/icons/png/512/919/919842.png", 
-    order_id: 5, user_id: user.id)
-Skill.create(name: "Python", 
-    img_url: "http://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-python-icon.png", 
-    order_id: 6, user_id: user.id)
-
-Github.create!(repo_owner: '256hz', repo_name: 'coderloader-react', 
-    img_url: 'https://www.emoji.co.uk/files/microsoft-emojis/symbols-windows10/10158-squared-cl.png',
-    summary: 'React.js frontend of portfolio generator/editor', 
-    contribution: 'JWT authorization, React-Router anchor tags, styling, Semantic gridding, component logic',
-    order_id: 0, user_id: user.id)
-Github.create(repo_owner: '256hz', repo_name: 'coderloader-rails', 
-    img_url: 'https://www.emoji.co.uk/files/microsoft-emojis/symbols-windows10/10158-squared-cl.png',
-    summary: 'Ruby on Rails backend of portfolio generator/editor', 
-    contribution: 'Initial setup of Postgres DB, API, and serializers, JWT, controller logic', 
-    order_id: 1, user_id: user.id)
-Github.create(repo_owner: '256hz', repo_name: 'green-up-seattle', 
-    img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fthatwasabitmental.files.wordpress.com%2F2014%2F07%2Ftroll-poster.jpg&f=1',
-    contribution: 'Leaderboard, automated DB seeding, ',
-    summary: 'React frontend of portfolio generator', 
-    order_id: 2, user_id: user.id)
-Github.create(repo_owner: 'ifmeorg', repo_name: 'ifme', 
-    img_url: 'https://avatars1.githubusercontent.com/u/23299450?s=200&v=4',
-    contribution: 'Styled a tooltip element',
-    summary: 'React frontend of portfolio generator', 
-    order_id: 3, user_id: user.id)

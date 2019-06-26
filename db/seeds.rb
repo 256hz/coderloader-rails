@@ -16,7 +16,7 @@ Github.destroy_all
 
 user = User.create!(first_name: 'Abe', last_name: 'Dolinger',
     email:"a.d@256hz.com", phone: '2679685414',
-    username:"abed", password: "256hzfolio#",
+    username:"test", password: ENV.fetch('CODERLOADER_PASSWORD'),
     title:"Full Stack Web Developer",
     bio:'',
     intro:'I\'m a product designer who switched from hardware to code.  Digital forever.',

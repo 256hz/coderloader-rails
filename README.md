@@ -6,7 +6,7 @@ Hello & welcome to CoderLoader's Ruby on Rails API backend.  This contains the r
 
 ### Overview
 
-CoderLoader is an easily maintainable, pretty, single-page portfolio/resume site for coders.  It includes a place for icons of your primary skills, featured Githubs, job experience, intro, and bio.  It supports easily switching the order of your skills/jobs/Githubs and color theming.  You can see and edit an example at [my sandbox site](http://sandboxportfolio.256hz.com).
+CoderLoader is an easily maintainable, pretty, single-page portfolio/resume site for coders.  It includes a place for icons of your primary skills, featured Githubs, job experience, intro, and bio.  It supports easily switching the order of your skills/jobs/Githubs and color theming.  You can see and edit an example at [the sandbox site](http://sandboxportfolio.256hz.com).
 
 This was bootstrapped with `rails new --api`, and runs on a PostgreSQL DB.  
 

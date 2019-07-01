@@ -16,7 +16,7 @@ Github.destroy_all
 
 user = User.create!(first_name: 'Douglas', last_name: 'Ward',
     email:"ward92@example.com", phone: '4345483214',
-    username:"wardou2", password: 'change_me'),
+    username:"wardou2", password: 'change_me',
     title:"Full Stack Web Developer",
     bio:'I can speak at length about my background and goals here',
     intro:'My two-line elevator pitch',

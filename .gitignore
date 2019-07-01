@@ -28,3 +28,4 @@
 
 #database setup file
 /config/database.yml
+/config/secret.yml

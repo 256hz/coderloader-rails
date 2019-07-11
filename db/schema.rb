@@ -10,14 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_03_211824) do
+ActiveRecord::Schema.define(version: 2019_07_10_231714) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "githubs", force: :cascade do |t|
-    t.string "repo_owner"
-    t.string "repo_name"
     t.string "img_url"
     t.string "summary"
     t.integer "user_id"
@@ -26,6 +24,9 @@ ActiveRecord::Schema.define(version: 2019_07_03_211824) do
     t.integer "order_id"
     t.string "contribution", default: [], array: true
     t.string "demo_url"
+    t.string "repo_url_front"
+    t.string "repo_url_back"
+    t.string "name"
   end
 
   create_table "honors", force: :cascade do |t|

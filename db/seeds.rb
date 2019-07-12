@@ -77,22 +77,22 @@ Skill.create(name: "Python",
     img_url: "http://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-python-icon.png",
     order_id: 6, user_id: user.id)
 
-Github.create!(repo_owner: 'you', repo_name: 'your-repo-1',
+Github.create!(repo_url_front: 'http://github.com/repo_front', name: 'your-repo-1',
     img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Favatars3.githubusercontent.com%2Fu%2F9585881%3Fs%3D400%26v%3D4&f=1',
     summary: 'The best repo of all time',
     contribution: ['JWT authorization', 'React-Router anchor tags', 'styling', 'Semantic gridding', 'component logic'],
     order_id: 0, user_id: user.id)
-Github.create(repo_owner: 'you', repo_name: 'your-repo-2',
+Github.create(repo_url_front: 'http://github.com/repo_front', name: 'your-repo-2',
     img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2F736x%2Fa7%2Fe8%2Ffa%2Fa7e8fa149fb23e4cbcfe9e8406b6b911.jpg&f=1',
     summary: 'The other best repo',
     contribution: ['Initial setup of Postgres DB, API, and serializers', 'JWT', 'controller logic'],
     order_id: 1, user_id: user.id)
-Github.create(repo_owner: 'you', repo_name: 'your-repo-3',
+Github.create(repo_url_front: 'http://github.com/repo_front', name: 'your-repo-3',
     img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1978599420%2Felectrocat_400x400.png&f=1',
     contribution: ['Leaderboard', 'automated DB seeding', 'auth'],
     summary: 'OK, there are at least 3 best repos',
     order_id: 2, user_id: user.id)
-Github.create(repo_owner: 'you', repo_name: 'your-repo-4',
+Github.create(repo_url_front: 'http://github.com/repo_front', name: 'your-repo-4',
     img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Favatars2.githubusercontent.com%2Fu%2F31044959%3Fs%3D400%26v%3D4&f=1',
     contribution: ['Chaos crystals'],
     summary: 'A four-way tie for best repo I guess',

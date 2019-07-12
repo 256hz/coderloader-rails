@@ -11,5 +11,5 @@ class JobSerializer < ActiveModel::Serializer
   :title, 
   :user_id,
   :responsibilities, 
-  :skills_used, 
+  :skills_used
 end

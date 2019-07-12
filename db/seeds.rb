@@ -14,11 +14,11 @@ Link.destroy_all
 User.destroy_all
 Github.destroy_all
 
-user = User.create!(first_name: 'Douglas', last_name: 'Ward',
-    email:"a.d@256hz.com", phone: '4345483214',
+user = User.create!(first_name: 'Abe', last_name: 'Dolinger',
+    email:"a.d@256hz.com", phone: '2679685414',
     username:"abed", password: ENV['CODERLOADER_PASSWORD'],
     title:"Front End Dev / Product Designer",
-    bio:'I can speak at length about my background and goals here',
+    bio:'Before coding, I was a hardware designer, startup founder, and sound engineer. In sound, I learned technical problem solving; in startups, I learned business logic. As a product designer, I learned creative problem solving from many perspectives: the user’s, the owner’s, and the manufacturer’s. Clear, concise communication was always paramount. Software design lets me combine all my experience, so moving to development was a no-brainer for me! I can finally make deep functionality feel light and effortless. I graduated from the Flatiron Full Stack Web Development program in June 2019, and my goal is to be a Technical Lead in the next 3-5 years.',
     intro:'I\'m a hardware product designer who switched to code.  Digital forever.',
     img_url: '/images/temp-avatar.png',
     color_theme: 'theme-ice'

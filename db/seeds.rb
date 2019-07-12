@@ -80,59 +80,59 @@ Skill.create(name: "Python",
 Github.create!(repo_owner: 'you', repo_name: 'your-repo-1',
     img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Favatars3.githubusercontent.com%2Fu%2F9585881%3Fs%3D400%26v%3D4&f=1',
     summary: 'The best repo of all time',
-    contribution: 'JWT authorization, React-Router anchor tags, styling, Semantic gridding, component logic',
+    contribution: ['JWT authorization', 'React-Router anchor tags', 'styling', 'Semantic gridding', 'component logic'],
     order_id: 0, user_id: user.id)
 Github.create(repo_owner: 'you', repo_name: 'your-repo-2',
     img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2F736x%2Fa7%2Fe8%2Ffa%2Fa7e8fa149fb23e4cbcfe9e8406b6b911.jpg&f=1',
     summary: 'The other best repo',
-    contribution: 'Initial setup of Postgres DB, API, and serializers, JWT, controller logic',
+    contribution: ['Initial setup of Postgres DB, API, and serializers', 'JWT', 'controller logic'],
     order_id: 1, user_id: user.id)
 Github.create(repo_owner: 'you', repo_name: 'your-repo-3',
     img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1978599420%2Felectrocat_400x400.png&f=1',
-    contribution: 'Leaderboard, automated DB seeding, auth',
+    contribution: ['Leaderboard', 'automated DB seeding', 'auth'],
     summary: 'OK, there are at least 3 best repos',
     order_id: 2, user_id: user.id)
 Github.create(repo_owner: 'you', repo_name: 'your-repo-4',
     img_url: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Favatars2.githubusercontent.com%2Fu%2F31044959%3Fs%3D400%26v%3D4&f=1',
-    contribution: 'Chaos crystals',
+    contribution: ['Chaos crystals'],
     summary: 'A four-way tie for best repo I guess',
     order_id: 3, user_id: user.id)
 
 # These aren't implemented yet
-Honor.create!(name: "MVP",
-    summary: "I made like a lot of money",
-    month: "Feb", year: "2002",
-    order_id: 0, user_id: user.id)
-Honor.create(name: "MVP2",
-    summary: "I made like a lot of money",
-    month: "Dec", year: "2003",
-    order_id: 1, user_id: user.id)
-Honor.create(name: "MVP3",
-    summary: "I made like a lot of money",
-    month: "Mar", year: "2004",
-    order_id: 2, user_id: user.id)
+# Honor.create!(name: "MVP",
+#     summary: "I made like a lot of money",
+#     month: "Feb", year: "2002",
+#     order_id: 0, user_id: user.id)
+# Honor.create(name: "MVP2",
+#     summary: "I made like a lot of money",
+#     month: "Dec", year: "2003",
+#     order_id: 1, user_id: user.id)
+# Honor.create(name: "MVP3",
+#     summary: "I made like a lot of money",
+#     month: "Mar", year: "2004",
+#     order_id: 2, user_id: user.id)
 
 
-Interest.create!(
-    name: "Music", summary: "This guy really knew how to screw people over",
-    order_id: 0, user_id: user.id)
-Interest.create(
-    name: "Acoustic guitar", summary: "I can play Wonderwall",
-    order_id: 1, user_id: user.id)
-Interest.create(
-    name: "Reddit", summary: "What a bunch of degenerates",
-    order_id: 2, user_id: user.id)
+# Interest.create!(
+#     name: "Music", summary: "This guy really knew how to screw people over",
+#     order_id: 0, user_id: user.id)
+# Interest.create(
+#     name: "Acoustic guitar", summary: "I can play Wonderwall",
+#     order_id: 1, user_id: user.id)
+# Interest.create(
+#     name: "Reddit", summary: "What a bunch of degenerates",
+#     order_id: 2, user_id: user.id)
 
 
-link1 = Link.create!(
-    title: "Githerb", url: "https://www.github.com",
-    summary: "It's a site what u want from me",
-    order_id: 0, user_id: user.id)
-link2 = Link.create(
-    title: "The Internet", url: "https://www.google.com",
-    summary: "Advertising hell",
-    order_id: 1, user_id: user.id)
-link3 = Link.create(
-    title: "Ableton", url: "https://www.ableton.com/en/",
-    summary: "A website from a company from a time in a place where the sea never ends into an infinite expanse of merpeople and crystal gazing spheres of liquid thought",
-    order_id: 2, user_id: user.id)
+# link1 = Link.create!(
+#     title: "Githerb", url: "https://www.github.com",
+#     summary: "It's a site what u want from me",
+#     order_id: 0, user_id: user.id)
+# link2 = Link.create(
+#     title: "The Internet", url: "https://www.google.com",
+#     summary: "Advertising hell",
+#     order_id: 1, user_id: user.id)
+# link3 = Link.create(
+#     title: "Ableton", url: "https://www.ableton.com/en/",
+#     summary: "A website from a company from a time in a place where the sea never ends into an infinite expanse of merpeople and crystal gazing spheres of liquid thought",
+#     order_id: 2, user_id: user.id)

@@ -10,6 +10,6 @@ class JobSerializer < ActiveModel::Serializer
   :summary,
   :title, 
   :user_id,
-  :responsibilities => [], 
-  :skills_used => [], 
+  :responsibilities, 
+  :skills_used, 
 end

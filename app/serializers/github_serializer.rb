@@ -8,5 +8,5 @@ class GithubSerializer < ActiveModel::Serializer
     :repo_url_back, 
     :summary, 
     :user_id,
-    :contribution => []
+    :contribution
 end

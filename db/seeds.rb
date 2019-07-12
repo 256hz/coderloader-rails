@@ -15,13 +15,13 @@ User.destroy_all
 Github.destroy_all
 
 user = User.create!(first_name: 'Douglas', last_name: 'Ward',
-    email:"ward92@example.com", phone: '4345483214',
-    username:"wardou2", password: ENV['CODERLOADER_PASSWORD'],
-    title:"Full Stack Web Developer",
+    email:"a.d@256hz.com", phone: '4345483214',
+    username:"abed", password: ENV['CODERLOADER_PASSWORD'],
+    title:"Front End Dev / Product Designer",
     bio:'I can speak at length about my background and goals here',
-    intro:'My two-line elevator pitch',
+    intro:'I\'m a hardware product designer who switched to code.  Digital forever.',
     img_url: '/images/temp-avatar.png',
-    color_theme: 'theme-default'
+    color_theme: 'theme-ice'
 )
 
 Job.create!(

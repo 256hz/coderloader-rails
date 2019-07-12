@@ -1,6 +1,5 @@
 class GithubSerializer < ActiveModel::Serializer
-  attributes :contribution, 
-    :demo_url,
+  attributes :demo_url,
     :id, 
     :img_url,
     :name, 
@@ -8,5 +7,6 @@ class GithubSerializer < ActiveModel::Serializer
     :repo_url_front, 
     :repo_url_back, 
     :summary, 
-    :user_id
+    :user_id,
+    :contribution => []
 end

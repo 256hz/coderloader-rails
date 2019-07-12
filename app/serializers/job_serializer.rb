@@ -1,6 +1,15 @@
 class JobSerializer < ActiveModel::Serializer
-  attributes :id, :company, :title, :summary,
-  :start_month, :start_year, :end_month, :end_year,
-  :responsibilities, :skills_used, :img_url, :user_id, 
-  :order_id
+  attributes :id,
+  :company, 
+  :end_month, 
+  :end_year,
+  :img_url, 
+  :order_id,
+  :start_month, 
+  :start_year, 
+  :summary,
+  :title, 
+  :user_id,
+  :responsibilities => [], 
+  :skills_used => [], 
 end

@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'coderloader-react.netlify.com', 'portfolio.256hz.com', 'localhost:3001' 
+    origins 'https://portfolio.256hz.com', 'coderloader-react.netlify.com', 'localhost:3001' 
 
     resource '*',
       headers: :any,
